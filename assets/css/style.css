@@ -40,3 +40,28 @@ h1,h2,h3,h4,h5,h6{
     right: 0px;
     z-index: 1000;
 }
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Nav */
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color:#fff;
+    text-decoration: none ;
+    transition: color .3s linear;
+}
+
+.nav__link:hover{
+    color:#fce38a;
+}
+
+
+
