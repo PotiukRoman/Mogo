@@ -38,6 +38,8 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
+
+    text-align: center;
 }
 
 .intro__title{
@@ -45,14 +47,26 @@ h1,h2,h3,h4,h5,h6{
     font-size: 150px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
+   /* text-align: center;  the parent class intro__inner has this property*/
     line-height: 1;
 }
 
+.intro__title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 70px auto 50px;
+
+    background-color: #fff;
+}
+
+
 .intro__suptitle{
+    margin-bottom: 20px;
     color: #fff;
     font-size: 72px;
-    text-align: center;
+   /* text-align: center;  the parent class intro__inner has this property */
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -122,5 +136,19 @@ h1,h2,h3,h4,h5,h6{
     opacity: 1;  
 }
 
+/* Button */
+.btn{
+    display: inline-block;
+    vertical-align:top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
 
 
