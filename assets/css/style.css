@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6{
 
     color:#fff;
     text-decoration: none ;
-    transition: color 0.1s linear;
+    transition: color 0.5s linear;
 }
 
 .nav__link::after{
@@ -125,7 +125,7 @@ h1,h2,h3,h4,h5,h6{
     left: 0;
     z-index: 1;
 
-    transition: opacity 0.1s linear;
+    transition: opacity 0.5s linear;
 }
 
 .nav__link:hover:active{
@@ -169,9 +169,16 @@ h1,h2,h3,h4,h5,h6{
 
 /* Slider */
 .slider{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__iner{
     display: flex;
     justify-content:space-between;   
-    margin-top: 30px; 
 }
 
 .slider__item{
