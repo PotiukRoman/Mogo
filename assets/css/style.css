@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6{
 
     color:#fff;
     text-decoration: none ;
-    transition: color 0.3s linear;
+    transition: color 0.1s linear;
 }
 
 .nav__link::after{
@@ -125,15 +125,24 @@ h1,h2,h3,h4,h5,h6{
     left: 0;
     z-index: 1;
 
-    transition: opacity 0.3s linear;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover:active{
+    color:deepskyblue;
 }
 
 .nav__link:hover{
     color:#fce38a;
 }
 
-.nav__link:hover::after{
+.nav__link:hover::after,
+.nav__link.active::after{
     opacity: 1;  
+}
+
+.nav__link.active{
+    color:#fce38a;
 }
 
 /* Button */
@@ -161,14 +170,41 @@ h1,h2,h3,h4,h5,h6{
 /* Slider */
 .slider{
     display: flex;
-    justify-content:space-between;    
+    justify-content:space-between;   
+    margin-top: 30px; 
 }
 
 .slider__item{
-    width: 24%;
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .6;
+
+
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.slider__item.active{
+    opacity: 1;
+}
+
+.slider__item.active::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+    
 }
 
 .slider__num{
